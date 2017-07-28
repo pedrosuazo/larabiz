@@ -12,6 +12,7 @@
                     'method' => 'POST'
                     ]) !!}
                     {{ Form::bsText('name', '', ['placeholder' => 'Company Name']) }}
+                    {{ Form::bsText('website', '', ['placeholder' => 'Company Website']) }}
                     {{ Form::bsText('email', '', ['placeholder' => 'Contact Email']) }}
                     {{ Form::bsText('phone', '', ['placeholder' => 'Contact Phone']) }}
                     {{ Form::bsText('address', '', ['placeholder' => 'Business address']) }}

@@ -5,7 +5,9 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">Dashboard <span class="pull-right"><a href="/listing/create" class="btn btn-success btn-sm">
+                            Add Listing
+                        </a></span></div>
 
                 <div class="panel-body">
                     <h3>Your Listings</h3>
