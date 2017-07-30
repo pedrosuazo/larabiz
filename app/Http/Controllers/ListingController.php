@@ -35,14 +35,14 @@ class ListingController extends Controller
      */
     public function store(Request $request)
     {
-       $this->validate($request, [
+        $this->validate($request, [
 
-           'name'=>'required',
-           'email'=>'email',
+            'name'=>'required',
+            'email'=>'email',
 
-       ]);
+        ]);
 
-       //create listing
+        //create listing
         $listing = new Listing;
         $listing -> name = $request->input('name');
         $listing -> website = $request->input('website');
