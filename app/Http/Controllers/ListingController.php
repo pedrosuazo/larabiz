@@ -7,6 +7,12 @@ use App\Listing;
 
 class ListingController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth', [
+           'except'=> ['index', 'show']
+        ]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -66,7 +72,8 @@ class ListingController extends Controller
      */
     public function show($id)
     {
-        //
+        $listing = Listing::find($id);
+        return view('showlisting')->with('listing', $listing);
     }
 
     /**
