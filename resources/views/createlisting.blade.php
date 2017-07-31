@@ -4,7 +4,9 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Create Listings</div>
+                <div class="panel-heading">Create Listings
+                    <a href="/dashboard" class="pull-right btn btn-default btn-xs">Go back</a>
+                </div>
 
                 <div class="panel-body">
                     {!! Form::open([
@@ -18,9 +20,6 @@
                     {{ Form::bsText('address', '', ['placeholder' => 'Business address']) }}
                     {{ Form::bsTextArea('bio', '', ['placeholder' => 'About this Business']) }}
                     {{ Form::bsSubmit('submit') }}
-
-
-
 
                     {!! Form::close() !!}
                 </div>
